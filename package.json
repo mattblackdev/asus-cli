@@ -1,0 +1,20 @@
+{
+  "name": "asus-cli",
+  "version": "1.0.0",
+  "description": "Control a local ASUS router from the command line",
+  "author": "Matt Black",
+  "license": "WTFPL",
+  "main": "src/start.js",
+  "bin": {
+    "asus": "bin/asus"
+  },
+  "scripts": {
+    "start": "node src/start.js",
+    "setup": "yarn install && npm link"
+  },
+  "dependencies": {
+    "commander": "^9.0.0",
+    "esm": "^3.2.25",
+    "puppeteer": "^13.3.2"
+  }
+}
